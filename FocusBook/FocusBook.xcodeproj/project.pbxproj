@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		982F223F29F9734A004AA2F7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F223E29F9734A004AA2F7 /* CoreDataManager.swift */; };
+		982F224129F97539004AA2F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F224029F97539004AA2F7 /* Model.swift */; };
+		983307CC29F600CA007ADE34 /* FocusBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983307CB29F600CA007ADE34 /* FocusBookApp.swift */; };
+		983307D029F600CB007ADE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983307CF29F600CB007ADE34 /* Assets.xcassets */; };
+		983307D829F600CB007ADE34 /* FocusBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */; };
+		98C7A56B29F6015100D3879B /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56329F6015100D3879B /* Preview.swift */; };
+		98C7A56C29F6015100D3879B /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56429F6015100D3879B /* GridStack.swift */; };
+		98C7A56D29F6015100D3879B /* PageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56529F6015100D3879B /* PageListView.swift */; };
+		98C7A56E29F6015100D3879B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56629F6015100D3879B /* MainView.swift */; };
+		98C7A56F29F6015100D3879B /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56729F6015100D3879B /* GridView.swift */; };
+		98C7A57029F6015100D3879B /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56829F6015100D3879B /* ContentViews.swift */; };
+		98C7A57129F6015100D3879B /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56929F6015100D3879B /* DescriptionView.swift */; };
+		98C7A57229F6015100D3879B /* FocusBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56A29F6015100D3879B /* FocusBookView.swift */; };
+		98C7A57C29F6015700D3879B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A57629F6015700D3879B /* License.txt */; };
+		98C7A57D29F6015700D3879B /* TextLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A57829F6015700D3879B /* TextLiteral.swift */; };
+		98C7A57E29F6015700D3879B /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A57929F6015700D3879B /* ImageLiteral.swift */; };
+		98C7A58E29F6123C00D3879B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A59029F6123C00D3879B /* Localizable.strings */; };
+		98C7A59229F6125100D3879B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A59429F6125100D3879B /* InfoPlist.strings */; };
+		98C7A59D29F7B4F800D3879B /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */; };
+		98C7A59E29F7B4F800D3879B /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		982F223E29F9734A004AA2F7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		982F224029F97539004AA2F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		983307C829F600CA007ADE34 /* FocusBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		983307CB29F600CA007ADE34 /* FocusBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusBookApp.swift; sourceTree = "<group>"; };
+		983307CF29F600CB007ADE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusBook.xcdatamodel; sourceTree = "<group>"; };
+		98C7A56329F6015100D3879B /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		98C7A56429F6015100D3879B /* GridStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		98C7A56529F6015100D3879B /* PageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageListView.swift; sourceTree = "<group>"; };
+		98C7A56629F6015100D3879B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		98C7A56729F6015100D3879B /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		98C7A56829F6015100D3879B /* ContentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
+		98C7A56929F6015100D3879B /* DescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		98C7A56A29F6015100D3879B /* FocusBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusBookView.swift; sourceTree = "<group>"; };
+		98C7A57629F6015700D3879B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		98C7A57829F6015700D3879B /* TextLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLiteral.swift; sourceTree = "<group>"; };
+		98C7A57929F6015700D3879B /* ImageLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		98C7A58F29F6123C00D3879B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98C7A59129F6124000D3879B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98C7A59329F6125100D3879B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98C7A59529F6125E00D3879B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
+		98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		983307C529F600CA007ADE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		983307BF29F600CA007ADE34 = {
+			isa = PBXGroup;
+			children = (
+				98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */,
+				98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */,
+				98C7A59A29F78B7000D3879B /* CoreData */,
+				983307CA29F600CA007ADE34 /* FocusBook */,
+				98C7A56229F6015100D3879B /* Views */,
+				98C7A57729F6015700D3879B /* Services */,
+				98C7A57329F6015700D3879B /* Resources */,
+				983307C929F600CA007ADE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		983307C929F600CA007ADE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983307C829F600CA007ADE34 /* FocusBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983307CA29F600CA007ADE34 /* FocusBook */ = {
+			isa = PBXGroup;
+			children = (
+				983307CB29F600CA007ADE34 /* FocusBookApp.swift */,
+				983307CF29F600CB007ADE34 /* Assets.xcassets */,
+			);
+			path = FocusBook;
+			sourceTree = "<group>";
+		};
+		98C7A56229F6015100D3879B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98C7A56829F6015100D3879B /* ContentViews.swift */,
+				98C7A56929F6015100D3879B /* DescriptionView.swift */,
+				98C7A56A29F6015100D3879B /* FocusBookView.swift */,
+				98C7A56729F6015100D3879B /* GridView.swift */,
+				98C7A56429F6015100D3879B /* GridStack.swift */,
+				98C7A56629F6015100D3879B /* MainView.swift */,
+				98C7A56529F6015100D3879B /* PageListView.swift */,
+				98C7A56329F6015100D3879B /* Preview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98C7A57329F6015700D3879B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98C7A57629F6015700D3879B /* License.txt */,
+				98C7A59029F6123C00D3879B /* Localizable.strings */,
+				98C7A59429F6125100D3879B /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		98C7A57729F6015700D3879B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98C7A57829F6015700D3879B /* TextLiteral.swift */,
+				98C7A57929F6015700D3879B /* ImageLiteral.swift */,
+			);
+			path = Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		98C7A59A29F78B7000D3879B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */,
+				982F223E29F9734A004AA2F7 /* CoreDataManager.swift */,
+				982F224029F97539004AA2F7 /* Model.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		983307C729F600CA007ADE34 /* FocusBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983307DB29F600CB007ADE34 /* Build configuration list for PBXNativeTarget "FocusBook" */;
+			buildPhases = (
+				983307C429F600CA007ADE34 /* Sources */,
+				983307C529F600CA007ADE34 /* Frameworks */,
+				983307C629F600CA007ADE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusBook;
+			productName = FocusBook;
+			productReference = 983307C829F600CA007ADE34 /* FocusBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		983307C029F600CA007ADE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					983307C729F600CA007ADE34 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 983307C329F600CA007ADE34 /* Build configuration list for PBXProject "FocusBook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ko,
+				en,
+			);
+			mainGroup = 983307BF29F600CA007ADE34;
+			productRefGroup = 983307C929F600CA007ADE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				983307C729F600CA007ADE34 /* FocusBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		983307C629F600CA007ADE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C7A58E29F6123C00D3879B /* Localizable.strings in Resources */,
+				98C7A57C29F6015700D3879B /* License.txt in Resources */,
+				983307D029F600CB007ADE34 /* Assets.xcassets in Resources */,
+				98C7A59229F6125100D3879B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		983307C429F600CA007ADE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C7A59E29F7B4F800D3879B /* Page+CoreDataProperties.swift in Sources */,
+				98C7A57229F6015100D3879B /* FocusBookView.swift in Sources */,
+				98C7A57D29F6015700D3879B /* TextLiteral.swift in Sources */,
+				982F223F29F9734A004AA2F7 /* CoreDataManager.swift in Sources */,
+				98C7A57E29F6015700D3879B /* ImageLiteral.swift in Sources */,
+				98C7A59D29F7B4F800D3879B /* Page+CoreDataClass.swift in Sources */,
+				98C7A56E29F6015100D3879B /* MainView.swift in Sources */,
+				983307D829F600CB007ADE34 /* FocusBook.xcdatamodeld in Sources */,
+				982F224129F97539004AA2F7 /* Model.swift in Sources */,
+				98C7A56C29F6015100D3879B /* GridStack.swift in Sources */,
+				98C7A56B29F6015100D3879B /* Preview.swift in Sources */,
+				98C7A57029F6015100D3879B /* ContentViews.swift in Sources */,
+				98C7A57129F6015100D3879B /* DescriptionView.swift in Sources */,
+				983307CC29F600CA007ADE34 /* FocusBookApp.swift in Sources */,
+				98C7A56F29F6015100D3879B /* GridView.swift in Sources */,
+				98C7A56D29F6015100D3879B /* PageListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98C7A59029F6123C00D3879B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C7A58F29F6123C00D3879B /* ko */,
+				98C7A59129F6124000D3879B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98C7A59429F6125100D3879B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C7A59329F6125100D3879B /* ko */,
+				98C7A59529F6125E00D3879B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		983307D929F600CB007ADE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		983307DA29F600CB007ADE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		983307DC29F600CB007ADE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6LML762WM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusBook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		983307DD29F600CB007ADE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6LML762WM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusBook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		983307C329F600CA007ADE34 /* Build configuration list for PBXProject "FocusBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983307D929F600CB007ADE34 /* Debug */,
+				983307DA29F600CB007ADE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983307DB29F600CB007ADE34 /* Build configuration list for PBXNativeTarget "FocusBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983307DC29F600CB007ADE34 /* Debug */,
+				983307DD29F600CB007ADE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */,
+			);
+			currentVersion = 983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */;
+			path = FocusBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 983307C029F600CA007ADE34 /* Project object */;
+}

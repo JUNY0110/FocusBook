@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  FocusBook
+
+  Created by 지준용 on 2023/04/24.
+  
+*/
+
+// MARK: - Button
+
+"appName" = "Focus Book";
+"readingABook" = "Reading a Book";
+"pageList" = "Page List";
+
+"continue" = "Continue";
+"preview" = "Preview";
+"save" = "Save";
+"delete" = "Delete";
+
+// MARK: - Text
+
+"mainDescription" = "  ▸ This app was created to help baby's visual development and parents' prenatal education.";
+
+"autoNextPicture" = "  ▸ Shows the next picture every 5 seconds.";
+"touchPicture" = "  ▸ If you touch an picture, the next image is displayed.";
+
+"addAndDeletePicture" = "  ▸ You can add/delete pictures.";
+"seeYourPicture" = "  ▸ You can see the pictures you have drawn so far.";
+
+"attractAttention" = "Draw more pictures to attract your baby's attention!";

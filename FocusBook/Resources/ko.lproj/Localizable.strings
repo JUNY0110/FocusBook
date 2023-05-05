@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  FocusBook
+
+  Created by 지준용 on 2023/04/24.
+  
+*/
+
+// MARK: - Button
+
+"appName" = "초점책";
+"readingABook" = "책 보여주기";
+"pageList" = "페이지 목록";
+
+"continue" = "계속하기";
+"preview" = "미리보기";
+"save" = "저장";
+"delete" = "삭제";
+
+// MARK: - Text
+
+"mainDescription" = "  ▸ 이 앱은 아기의 시각 발달과 부모의 태교활동을 돕기 위해 만들었습니다.";
+
+"autoNextPicture" = "  ▸ 5초마다 다른 사진을 보여줍니다.";
+"touchPicture" = "  ▸ 사진을 터치하면 다음 페이지로 넘길 수 있습니다.";
+
+"addAndDeletePicture" = "  ▸ 사진을 추가/삭제 할 수 있습니다.";
+"seeYourPicture" = "  ▸ 지금까지 여러분이 그린 그림들을 확인할 수 있습니다.";
+
+"attractAttention" = "아기의 관심을 더 오래 끌고 싶다면 더 많은 그림을 모아보세요!";
+
+
