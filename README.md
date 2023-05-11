@@ -1,4 +1,4 @@
-WWDC23 Swift Student Challenge 제출 프로젝트입니다.
+WWDC23 Swift Student Challenge에서 WWDC23 WINNER로 선정된 프로젝트이며, AppStore에 출시되었습니다.
 
 # 🧑‍🍼 초점책 [FocusBook]
 - 아기가 초점책을 읽는 행위는 아기의 시각발달과 주의력, 집중력 향상을 도우며, 부모의 태교활동에 도움을 주는 활동입니다.
