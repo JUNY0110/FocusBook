@@ -10,7 +10,6 @@ struct MainView: View {
     UIScreen.main.bounds.width : UIScreen.main.bounds.height
     @Binding var isPresented: Bool
     @State private var images: [UIImage] = CoreDataManager.shared.fetchImage()
-//    + [UIImage(named: ImageLiteral.dog)!, UIImage(named: ImageLiteral.heartFill)!, UIImage(named: ImageLiteral.square)!]
 
     // MARK: - View
 
