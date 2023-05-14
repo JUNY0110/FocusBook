@@ -17,7 +17,7 @@
 		98C7A56D29F6015100D3879B /* PageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56529F6015100D3879B /* PageListView.swift */; };
 		98C7A56E29F6015100D3879B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56629F6015100D3879B /* MainView.swift */; };
 		98C7A56F29F6015100D3879B /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56729F6015100D3879B /* GridView.swift */; };
-		98C7A57029F6015100D3879B /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56829F6015100D3879B /* ContentViews.swift */; };
+		98C7A57029F6015100D3879B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56829F6015100D3879B /* ContentView.swift */; };
 		98C7A57129F6015100D3879B /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56929F6015100D3879B /* DescriptionView.swift */; };
 		98C7A57229F6015100D3879B /* FocusBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56A29F6015100D3879B /* FocusBookView.swift */; };
 		98C7A57C29F6015700D3879B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A57629F6015700D3879B /* License.txt */; };
@@ -41,7 +41,7 @@
 		98C7A56529F6015100D3879B /* PageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageListView.swift; sourceTree = "<group>"; };
 		98C7A56629F6015100D3879B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		98C7A56729F6015100D3879B /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		98C7A56829F6015100D3879B /* ContentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
+		98C7A56829F6015100D3879B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98C7A56929F6015100D3879B /* DescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		98C7A56A29F6015100D3879B /* FocusBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusBookView.swift; sourceTree = "<group>"; };
 		98C7A57629F6015700D3879B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				983307CB29F600CA007ADE34 /* FocusBookApp.swift */,
+				98C7A56829F6015100D3879B /* ContentView.swift */,
 				983307CF29F600CB007ADE34 /* Assets.xcassets */,
 			);
 			path = FocusBook;
@@ -100,7 +101,6 @@
 		98C7A56229F6015100D3879B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				98C7A56829F6015100D3879B /* ContentViews.swift */,
 				98C7A56929F6015100D3879B /* DescriptionView.swift */,
 				98C7A56A29F6015100D3879B /* FocusBookView.swift */,
 				98C7A56729F6015100D3879B /* GridView.swift */,
@@ -224,7 +224,7 @@
 				982F224129F97539004AA2F7 /* Model.swift in Sources */,
 				98C7A56C29F6015100D3879B /* GridStack.swift in Sources */,
 				98C7A56B29F6015100D3879B /* Preview.swift in Sources */,
-				98C7A57029F6015100D3879B /* ContentViews.swift in Sources */,
+				98C7A57029F6015100D3879B /* ContentView.swift in Sources */,
 				98C7A57129F6015100D3879B /* DescriptionView.swift in Sources */,
 				983307CC29F600CA007ADE34 /* FocusBookApp.swift in Sources */,
 				98C7A56F29F6015100D3879B /* GridView.swift in Sources */,
@@ -378,7 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = N6LML762WM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -388,14 +388,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -403,7 +403,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -413,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = N6LML762WM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -423,14 +423,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -438,7 +438,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
