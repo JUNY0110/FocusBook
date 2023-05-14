@@ -27,35 +27,27 @@ struct FocusBookView: View {
         if images.count > 0 {
             Image(uiImage: images[index])
                 .resizable()
-                .frame(width: self.screenSize * 0.9, height: self.screenSize * 0.9, alignment: .center)
+                .frame(width: screenSize * 0.9, height: screenSize * 0.9, alignment: .center)
                 .aspectRatio(contentMode: .fit)
                 .offset(y: self.isAnimating ? 0 : -100)
                 .animation(.easeInOut(duration: 1.5).repeatForever(), value: self.isAnimating)
-                .rotation3DEffect(.degrees(self.animationAmount), axis: (x: 0, y: 1, z: 0))
+                .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
                 .onAppear {
                     self.isAnimating = true
                 }
                 .onTapGesture {
-                    self.index += 1
-                    self.seconds = 0
-
-                    if self.index == self.images.count {
-                        self.index = 0
-                    }
+                    index = (index == images.count - 1) ? 0 : (index + 1)
+                    seconds = 0
                 }
                 .onReceive(timer) { _ in
                     if images.count > 0 {
-                        self.seconds = (self.seconds == 5) ? 0 : (self.seconds + 1)
+                        seconds = (seconds == 5) ? 0 : (seconds + 1)
                         
-                        if (self.seconds % 5 == 0) && self.seconds != 0 {
-                            self.index += 1
-
-                            if self.index == images.count {
-                                self.index = 0
-                            }
+                        if (seconds % 5 == 0) && seconds != 0 {
+                            index = (index == images.count - 1) ? 0 : (index + 1)
                             
                             withAnimation {
-                                self.animationAmount += 180
+                                animationAmount += 180
                             }
                         }
                     }
