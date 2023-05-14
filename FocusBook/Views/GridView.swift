@@ -57,6 +57,7 @@ struct GridView: View {
                 }
             }
         }
+        .edgesIgnoringSafeArea(.horizontal)
         .toolbar {
             Button(preview) {
                 self.isPreviewed.toggle()
