@@ -37,24 +37,26 @@ struct FocusBookView: View {
                 }
                 .onTapGesture {
                     self.index += 1
+                    self.seconds = 0
+
                     if self.index == self.images.count {
                         self.index = 0
                     }
                 }
                 .onReceive(timer) { _ in
-                    if images.count > 1 {
+                    if images.count > 0 {
                         self.seconds = (self.seconds == 5) ? 0 : (self.seconds + 1)
                         
-                        if self.seconds.isMultiple(of: 5) && self.seconds != 0 {
+                        if (self.seconds % 5 == 0) && self.seconds != 0 {
                             self.index += 1
+
+                            if self.index == images.count {
+                                self.index = 0
+                            }
                             
                             withAnimation {
                                 self.animationAmount += 180
                             }
-                        }
-                        
-                        if self.index == (images.count - 1) {
-                            self.index = 0
                         }
                     }
                 }
