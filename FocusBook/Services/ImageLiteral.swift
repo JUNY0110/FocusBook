@@ -12,11 +12,6 @@ class ImageLiteral {
     // MARK: - MainView
     
     static let appName = "focusBook"
-    static let heart = "heart"
-    static let heartFill = "heartFill"
-    static let dog = "dog"
-    static let smile = "smile"
-    static let square = "square"
     static let plus = "plus"
     
     // MARK: - GridView
