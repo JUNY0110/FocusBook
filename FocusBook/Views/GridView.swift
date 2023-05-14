@@ -138,7 +138,7 @@ struct GridView: View {
     
     private func colorCell(row: Int, column: Int) -> some View {
         let cell = Rectangle()
-            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : .white)
+            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : (isPreviewed ? .clear : .white))
         return cell
     }
 
