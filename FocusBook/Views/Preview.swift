@@ -20,11 +20,10 @@ struct Preview: View {
     
     @Binding var images: [UIImage] {
         didSet {
-            index = 0
             self.dismiss()
         }
     }
-    @State var index = 0
+    let index: Int
     
     let coreDataManager = CoreDataManager.shared
     
@@ -34,13 +33,11 @@ struct Preview: View {
         Image(uiImage: images[index])
             .resizable()
             .aspectRatio(contentMode: .fit)
-//            .toolbar {
-//                if images.count > 1 {
-//                    Button(TextLiteral.delete) {
-//                        deleteImage(index: index)
-//                    }.foregroundColor(.red)
-//                }
-//            }
+            .toolbar {
+                Button(TextLiteral.delete) {
+                    deleteImage(index: index)
+                }.foregroundColor(.red)
+            }
     }
     
     func deleteImage(index: Int) {

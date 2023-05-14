@@ -27,28 +27,21 @@ struct PageListView: View {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(images.indices, id: \.self) { index in
                     NavigationLink {
-                        Preview(images: $images, index: index)
+                        if index == (images.endIndex - 1) {
+                            GridView(screenSize: screenSize, images: $images)
+                        } else {
+                            Preview(images: $images, index: index)
+                        }
+                        
                     } label: {
                         Image(uiImage: images[index])
                             .resizable()
-                            .frame(width: self.screenSize / 7,
-                                   height: self.screenSize / 7)
+                            .frame(width: screenSize / 7,
+                                   height: screenSize / 7)
                             .border(.gray, width: 3)
                             .cornerRadius(8)
                             .aspectRatio(contentMode: .fit)
                     }
-                }
-                
-                NavigationLink {
-                    GridView(screenSize: screenSize, images: $images)
-                } label: {
-                    Image(uiImage: UIImage(named: ImageLiteral.plus)!)
-                        .resizable()
-                        .frame(width: self.screenSize / 7,
-                               height: self.screenSize / 7)
-                        .border(.gray, width: 3)
-                        .cornerRadius(8)
-                        .aspectRatio(contentMode: .fit)
                 }
             }
         }

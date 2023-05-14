@@ -64,7 +64,7 @@ struct GridView: View {
             
             Button(TextLiteral.save) {
                 coreDataManager.saveImage(image: render())
-                images.insert(render(), at: images.startIndex)
+                images.insert(render(), at: images.count - 1)
             }
             .foregroundColor(self.isPreviewed ? .blue : .secondary)
             .disabled(self.isPreviewed ? false : true)

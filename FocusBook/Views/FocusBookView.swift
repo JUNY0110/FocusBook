@@ -24,7 +24,7 @@ struct FocusBookView: View {
     // MARK: - View
     
     var body: some View {
-        if images.count > 0 {
+        if images.count > 1 {
             Image(uiImage: images[index])
                 .resizable()
                 .frame(width: screenSize * 0.9, height: screenSize * 0.9, alignment: .center)
@@ -36,7 +36,7 @@ struct FocusBookView: View {
                     self.isAnimating = true
                 }
                 .onTapGesture {
-                    index = (index == images.count - 1) ? 0 : (index + 1)
+                    index = (index == images.count - 2) ? 0 : (index + 1)
                     seconds = 0
                 }
                 .onReceive(timer) { _ in
@@ -44,7 +44,7 @@ struct FocusBookView: View {
                         seconds = (seconds == 5) ? 0 : (seconds + 1)
                         
                         if (seconds % 5 == 0) && seconds != 0 {
-                            index = (index == images.count - 1) ? 0 : (index + 1)
+                            index = (index == images.count - 2) ? 0 : (index + 1)
                             
                             withAnimation {
                                 animationAmount += 180
