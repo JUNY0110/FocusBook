@@ -1,9 +1,8 @@
-WWDC23 Swift Student Challenge 제출 프로젝트입니다.
+WWDC23 Swift Student Challenge에서 WWDC23 WINNER로 선정된 프로젝트이며, AppStore에 출시되었습니다.
 
 # 🧑‍🍼 초점책 [FocusBook]
 - 아기가 초점책을 읽는 행위는 아기의 시각발달과 주의력, 집중력 향상을 도우며, 부모의 태교활동에 도움을 주는 활동입니다.
   - Reading focus books helps your baby's visual development, attention, and concentration. In addition, making a focus book is an activity that is helpful for parents' prenatal education.
-
 - 초점책은 아기들이 자연스럽게 그림을 보고, 물체를 살피고, 색상과 패턴을 인지하며, 시각 발달을 촉진할 수 있도록 만들어진 책입니다.
   - A focus book is a book designed to help babies naturally view pictures, examine objects, perceive colors and patterns, and promote visual development. 
 - 초점책은 대개 간단한 형태와 색상, 그리고 뚜렷한 대비를 가진 이미지를 사용합니다. 이러한 요소들은 아기들이 초점을 잡기 쉬운 시각적 자극을 받게 하고, 아기의 시각 및 인지능력 발달을 돕습니다.
@@ -18,8 +17,6 @@ WWDC23 Swift Student Challenge 제출 프로젝트입니다.
   - I used animations and 3D effects in SwiftUI, and implemented the function to render and save images. 
 - AVFoundation의 음원 재생 기능을 사용해 배경 음악이 앱 실행 시 자동재생 되도록 하였습니다.
   - I also used AVFoundation's audio playback functionality to automatically play background music when the app is launched.
-
-I used AVFoundation's audio playback functionality to automatically play background music when the app is launched.
 
   |책 보여주기 (Reading a Book)|페이지 추가 (Save Page)|페이지 삭제 (Delete Page)|
   |:-:|:-:|:-:|
