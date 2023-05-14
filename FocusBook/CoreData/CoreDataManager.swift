@@ -56,6 +56,10 @@ class CoreDataManager {
                     images.append(image)
                 }
             }
+            if let plusImage = UIImage(named: ImageLiteral.plus), !images.contains(plusImage) {
+                images.append(plusImage)
+            }
+            
             return images
         } catch {
             print("Error: Failed to fetch images: \(error)")
