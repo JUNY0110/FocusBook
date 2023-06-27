@@ -17,7 +17,6 @@ struct FocusBookView: View {
     @Binding var images: [UIImage]
     
     @State private var index = 0
-    @State private var animationAmount = 0.0
     @State private var seconds = 0
     @State private var isAnimating = false
     
@@ -27,29 +26,21 @@ struct FocusBookView: View {
         if images.count > 1 {
             Image(uiImage: images[index])
                 .resizable()
-                .frame(width: screenSize * 0.9, height: screenSize * 0.9, alignment: .center)
+                .frame(width: screenSize * 0.8, height: screenSize * 0.8, alignment: .center)
                 .aspectRatio(contentMode: .fit)
-                .offset(y: self.isAnimating ? 0 : -100)
-                .animation(.easeInOut(duration: 1.5).repeatForever(), value: self.isAnimating)
-                .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
+                .offset(x: self.isAnimating ? UIScreen.main.bounds.width * 0.8: -UIScreen.main.bounds.width * 0.8)
+                .animation(.linear(duration: 15).repeatForever(), value: self.isAnimating)
                 .onAppear {
                     self.isAnimating = true
                 }
                 .onTapGesture {
-                    index = (index == images.count - 2) ? 0 : (index + 1)
-                    seconds = 0
+                    index = (index == images.endIndex - 2) ? 0 : (index + 1)
                 }
                 .onReceive(timer) { _ in
-                    if images.count > 0 {
-                        seconds = (seconds == 5) ? 0 : (seconds + 1)
-                        
-                        if (seconds % 5 == 0) && seconds != 0 {
-                            index = (index == images.count - 2) ? 0 : (index + 1)
-                            
-                            withAnimation {
-                                animationAmount += 180
-                            }
-                        }
+                    seconds = (seconds == 15) ? 1 : (seconds + 1)
+
+                    if (seconds % 15 == 0) && seconds != 0 {
+                        index = (index == images.count - 2) ? 0 : (index + 1)
                     }
                 }
         } else {
