@@ -78,7 +78,6 @@ struct GridView: View {
                 .font(.system(size: 20, weight: .semibold, design: .rounded))
             
             HStack(spacing: 0) {
-                
                 Button {
                     numberOfCells -= 1
                 } label: {
@@ -139,7 +138,7 @@ struct GridView: View {
     
     private func colorCell(row: Int, column: Int) -> some View {
         let cell = Rectangle()
-            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : (isPreviewed ? .clear : .white))
+            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : .white)
         return cell
     }
 
