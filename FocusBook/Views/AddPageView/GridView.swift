@@ -18,14 +18,14 @@ struct GridView: View {
     private var borderColor: Color { isPreviewed ? .white : .gray }
     private var preview: LocalizedStringKey { isPreviewed ? TextLiteral.continue : TextLiteral.preview }
 
-    @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.dismiss) private var dismiss
     @Environment(\.displayScale) private var displayScale
 
-    let coreDataManager = CoreDataManager.shared
+    let imageFileManager = ImageFileManager.shared
     
     @Binding var images: [UIImage] {
         didSet {
+            print(images.last!)
             dismiss()
         }
     }
@@ -48,7 +48,7 @@ struct GridView: View {
             
             if !isPreviewed {
                 VStack(alignment: .trailing) {
-                    colorSet
+                    colorTag
                     
                     Spacer()
                     
@@ -64,14 +64,17 @@ struct GridView: View {
             }.foregroundColor(.blue)
             
             Button(TextLiteral.save) {
-                coreDataManager.saveImage(image: render())
-                images.insert(render(), at: 0)
+                let image = render()
+                imageFileManager.saveImageToDirectory(image: image)
+                
+                self.images = imageFileManager.loadAllImageFromDirectory()
             }
             .foregroundColor(self.isPreviewed ? .blue : .secondary)
             .disabled(self.isPreviewed ? false : true)
         }
     }
     
+    @ViewBuilder
     private var stepper: some View {
         VStack {
             Text("\(numberOfCells) x \(numberOfCells)")
@@ -105,6 +108,7 @@ struct GridView: View {
         }
     }
     
+    @ViewBuilder
     private var gridView: some View {
         GridStack(numberOfCells: numberOfCells) { row, column in
             colorCell(row: row, column: column)
@@ -123,7 +127,8 @@ struct GridView: View {
         .scenePadding()
     }
     
-    private var colorSet: some View {
+    @ViewBuilder
+    private var colorTag: some View {
         ForEach(0..<colors.count, id: \.self) { color in
             Rectangle()
                 .onTapGesture {
@@ -136,10 +141,10 @@ struct GridView: View {
         }
     }
     
+    @ViewBuilder
     private func colorCell(row: Int, column: Int) -> some View {
-        let cell = Rectangle()
-            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : .white)
-        return cell
+        Rectangle()
+            .foregroundColor(self.matrix.contains("\(row),\(column)") ? colors[colorCount] : (isPreviewed ? .clear : .white))
     }
 
     // MARK: - Method
@@ -153,18 +158,5 @@ struct GridView: View {
             self.renderedImage = uiImage
         }
         return renderedImage ?? UIImage()
-    }
-    
-    private func saveRenderedImage(image: UIImage) {
-        if let imageData = image.pngData() {
-            let add = Page(context: self.viewContext)
-            add.image = imageData
-
-            do {
-                try self.viewContext.save()
-            } catch {
-                print("Failed to save: \(error)")
-            }
-        }
     }
 }

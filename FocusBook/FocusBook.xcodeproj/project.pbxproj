@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		982F223F29F9734A004AA2F7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F223E29F9734A004AA2F7 /* CoreDataManager.swift */; };
-		982F224129F97539004AA2F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F224029F97539004AA2F7 /* Model.swift */; };
 		983307CC29F600CA007ADE34 /* FocusBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983307CB29F600CA007ADE34 /* FocusBookApp.swift */; };
 		983307D029F600CB007ADE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983307CF29F600CB007ADE34 /* Assets.xcassets */; };
-		983307D829F600CB007ADE34 /* FocusBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */; };
+		987048612BACA2B700EB028D /* ImageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987048602BACA2B700EB028D /* ImageFileManager.swift */; };
 		98C7A56B29F6015100D3879B /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56329F6015100D3879B /* Preview.swift */; };
 		98C7A56C29F6015100D3879B /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56429F6015100D3879B /* GridStack.swift */; };
 		98C7A56D29F6015100D3879B /* PageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A56529F6015100D3879B /* PageListView.swift */; };
@@ -25,17 +23,13 @@
 		98C7A57E29F6015700D3879B /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A57929F6015700D3879B /* ImageLiteral.swift */; };
 		98C7A58E29F6123C00D3879B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A59029F6123C00D3879B /* Localizable.strings */; };
 		98C7A59229F6125100D3879B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C7A59429F6125100D3879B /* InfoPlist.strings */; };
-		98C7A59D29F7B4F800D3879B /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */; };
-		98C7A59E29F7B4F800D3879B /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		982F223E29F9734A004AA2F7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		982F224029F97539004AA2F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		983307C829F600CA007ADE34 /* FocusBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983307CB29F600CA007ADE34 /* FocusBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusBookApp.swift; sourceTree = "<group>"; };
 		983307CF29F600CB007ADE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusBook.xcdatamodel; sourceTree = "<group>"; };
+		987048602BACA2B700EB028D /* ImageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileManager.swift; sourceTree = "<group>"; };
 		98C7A56329F6015100D3879B /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		98C7A56429F6015100D3879B /* GridStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		98C7A56529F6015100D3879B /* PageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageListView.swift; sourceTree = "<group>"; };
@@ -51,8 +45,6 @@
 		98C7A59129F6124000D3879B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98C7A59329F6125100D3879B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98C7A59529F6125E00D3879B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
-		98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +61,9 @@
 		983307BF29F600CA007ADE34 = {
 			isa = PBXGroup;
 			children = (
-				98C7A59B29F7B4F800D3879B /* Page+CoreDataClass.swift */,
-				98C7A59C29F7B4F800D3879B /* Page+CoreDataProperties.swift */,
-				98C7A59A29F78B7000D3879B /* CoreData */,
 				983307CA29F600CA007ADE34 /* FocusBook */,
 				98C7A56229F6015100D3879B /* Views */,
+				98C7A59A29F78B7000D3879B /* LocalStorage */,
 				98C7A57729F6015700D3879B /* Services */,
 				98C7A57329F6015700D3879B /* Resources */,
 				983307C929F600CA007ADE34 /* Products */,
@@ -98,16 +88,48 @@
 			path = FocusBook;
 			sourceTree = "<group>";
 		};
-		98C7A56229F6015100D3879B /* Views */ = {
+		987048622BAD70DE00EB028D /* DescriptionView */ = {
 			isa = PBXGroup;
 			children = (
 				98C7A56929F6015100D3879B /* DescriptionView.swift */,
+			);
+			path = DescriptionView;
+			sourceTree = "<group>";
+		};
+		987048632BAD70F400EB028D /* FocusBookView */ = {
+			isa = PBXGroup;
+			children = (
 				98C7A56A29F6015100D3879B /* FocusBookView.swift */,
+			);
+			path = FocusBookView;
+			sourceTree = "<group>";
+		};
+		987048642BAD713400EB028D /* PageListView */ = {
+			isa = PBXGroup;
+			children = (
+				98C7A56529F6015100D3879B /* PageListView.swift */,
+			);
+			path = PageListView;
+			sourceTree = "<group>";
+		};
+		987048652BAD715A00EB028D /* AddPageView */ = {
+			isa = PBXGroup;
+			children = (
 				98C7A56729F6015100D3879B /* GridView.swift */,
 				98C7A56429F6015100D3879B /* GridStack.swift */,
-				98C7A56629F6015100D3879B /* MainView.swift */,
-				98C7A56529F6015100D3879B /* PageListView.swift */,
 				98C7A56329F6015100D3879B /* Preview.swift */,
+			);
+			path = AddPageView;
+			sourceTree = "<group>";
+		};
+		98C7A56229F6015100D3879B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98C7A56629F6015100D3879B /* MainView.swift */,
+				987048652BAD715A00EB028D /* AddPageView */,
+				987048622BAD70DE00EB028D /* DescriptionView */,
+				987048632BAD70F400EB028D /* FocusBookView */,
+				987048642BAD713400EB028D /* PageListView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,14 +153,12 @@
 			path = Services;
 			sourceTree = SOURCE_ROOT;
 		};
-		98C7A59A29F78B7000D3879B /* CoreData */ = {
+		98C7A59A29F78B7000D3879B /* LocalStorage */ = {
 			isa = PBXGroup;
 			children = (
-				983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */,
-				982F223E29F9734A004AA2F7 /* CoreDataManager.swift */,
-				982F224029F97539004AA2F7 /* Model.swift */,
+				987048602BACA2B700EB028D /* ImageFileManager.swift */,
 			);
-			path = CoreData;
+			path = LocalStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +189,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					983307C729F600CA007ADE34 = {
 						CreatedOnToolsVersion = 14.3;
@@ -183,6 +203,7 @@
 			knownRegions = (
 				ko,
 				en,
+				Base,
 			);
 			mainGroup = 983307BF29F600CA007ADE34;
 			productRefGroup = 983307C929F600CA007ADE34 /* Products */;
@@ -213,15 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C7A59E29F7B4F800D3879B /* Page+CoreDataProperties.swift in Sources */,
 				98C7A57229F6015100D3879B /* FocusBookView.swift in Sources */,
 				98C7A57D29F6015700D3879B /* TextLiteral.swift in Sources */,
-				982F223F29F9734A004AA2F7 /* CoreDataManager.swift in Sources */,
+				987048612BACA2B700EB028D /* ImageFileManager.swift in Sources */,
 				98C7A57E29F6015700D3879B /* ImageLiteral.swift in Sources */,
-				98C7A59D29F7B4F800D3879B /* Page+CoreDataClass.swift in Sources */,
 				98C7A56E29F6015100D3879B /* MainView.swift in Sources */,
-				983307D829F600CB007ADE34 /* FocusBook.xcdatamodeld in Sources */,
-				982F224129F97539004AA2F7 /* Model.swift in Sources */,
 				98C7A56C29F6015100D3879B /* GridStack.swift in Sources */,
 				98C7A56B29F6015100D3879B /* Preview.swift in Sources */,
 				98C7A57029F6015100D3879B /* ContentView.swift in Sources */,
@@ -293,6 +310,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -354,6 +372,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -378,7 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = N6LML762WM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -390,17 +409,18 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,7 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = N6LML762WM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,17 +445,18 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = joonyong.com.FocusBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,19 +485,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		983307D629F600CB007ADE34 /* FocusBook.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */,
-			);
-			currentVersion = 983307D729F600CB007ADE34 /* FocusBook.xcdatamodel */;
-			path = FocusBook.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 983307C029F600CA007ADE34 /* Project object */;
 }

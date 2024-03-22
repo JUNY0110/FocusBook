@@ -13,7 +13,6 @@ struct PageListView: View {
     // MARK: - Property
     
     let screenSize: CGFloat
-    let coreDataManager = CoreDataManager.shared
     
     @Binding var images: [UIImage]
     @State private var isPresented = false
@@ -30,9 +29,8 @@ struct PageListView: View {
                         if index == (images.endIndex - 1) {
                             GridView(screenSize: screenSize, images: $images)
                         } else {
-                            Preview(images: $images, index: index)
+                            Preview(index: index, images: $images)
                         }
-                        
                     } label: {
                         Image(uiImage: images[index])
                             .resizable()

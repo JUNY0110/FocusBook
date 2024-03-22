@@ -25,8 +25,13 @@ struct ContentView: View {
         .onAppear {
             isPresented = true
             
-            let bgm = NSDataAsset(name: "bgm")
-            self.audio = try! AVAudioPlayer(data: bgm!.data, fileTypeHint: "mp3")
+            if let bgm = NSDataAsset(name: "bgm") {
+                do {
+                    self.audio = try AVAudioPlayer(data: bgm.data, fileTypeHint: "mp3")
+                } catch {
+                    print("[ERROR]: ContentView audio ERROR")
+                }
+            }
         }
         .sheet(isPresented: $isPresented) {
             DescriptionView(audio: $audio)

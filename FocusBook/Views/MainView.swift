@@ -9,7 +9,7 @@ struct MainView: View {
     private let screenSize = UIScreen.main.bounds.height > UIScreen.main.bounds.width ?
     UIScreen.main.bounds.width : UIScreen.main.bounds.height
     @Binding var isPresented: Bool
-    @State private var images: [UIImage] = CoreDataManager.shared.fetchImage()
+    @State private var images: [UIImage] = ImageFileManager.shared.loadAllImageFromDirectory()
 
     // MARK: - View
 
